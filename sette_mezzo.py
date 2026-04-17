@@ -49,6 +49,7 @@ while continua == "s":
         print("Hai sballato, il banco vince!")
         print(f"Punteggio del banco: {punteggio_banco}")
         print(f"Punteggio del giocatore: {punteggio_giocatore}")
+        contatore_banco = contatore_banco + 1
     else:
         print("Turno del banco")
         print()
