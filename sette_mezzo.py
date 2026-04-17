@@ -1,6 +1,8 @@
 from random import randint
 
 continua = "s"
+contatore_banco = 0
+contatore_giocatore = 0
 while continua == "s":
 
     punteggio_giocatore = 0.0
@@ -70,9 +72,14 @@ while continua == "s":
             print("Il banco ha vinto!")
             print(f"Punteggio del banco: {punteggio_banco}")
             print(f"Punteggio del giocatore: {punteggio_giocatore}")
+            contatore_banco = contatore_banco + 1
         else:
             print("Hai vinto!")
             print(f"Punteggio del banco: {punteggio_banco}")
             print(f"Punteggio del giocatore: {punteggio_giocatore}")
+            contatore_giocatore = contatore_giocatore + 1
     continua = input("Vuoi continuare? (S/N)")
     continua = continua.lower()
+
+print(f"Vittorie del banco: {contatore_banco}")
+print(f"Vittorie del giocatore: {contatore_giocatore}")
