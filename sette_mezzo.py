@@ -1,5 +1,7 @@
 from random import randint
 
+#Questo codice implementa il gioco del sette e mezzo semplificato
+
 continua = "s"
 contatore_banco = 0
 contatore_giocatore = 0
